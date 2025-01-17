@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ob-havo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1440px;
+            width: 100%;
+            margin: 0px auto;
+        }
+    </style>
+    <header class="bg-blue-800">
+        <nav class="container flex items-center justify-between px-4">
+            <img class="w-28" src="assets/img/obhavo__logo.png" alt="obhavo__logo">
+            <div class="flex md:space-x-12 space-x-4 items-center justify-center">
+                <!-- <ul class="flex items-center justify-center space-x-8">
+                    <li class="text-lg font-bold text-white transition-all cursor-pointer hover:bg-white hover:text-blue-800 py-[6px] rounded-md px-4">Bugun</li>
+                    <li class="text-lg font-bold text-white transition-all cursor-pointer hover:bg-white hover:text-blue-800 py-[6px] rounded-md px-4">Soatlik</li>
+                    <li class="text-lg font-bold text-white transition-all cursor-pointer hover:bg-white hover:text-blue-800 py-[6px] rounded-md px-4">Haftalik</li>
+                </ul> -->
+            
+            
+                <div class="flex items-center justify-center gap-2">
+                    <img class="md:w-[68px] w-[48px] cursor-pointer" src="assets/img/uzb.png" alt="uzb">
+                    <span class="text-white -ml-2 font-bold cursor-pointer md:text-lg text-sm">UZB</span>
+                </div>   
+                <div class="flex items-center justify-center gap-2">
+                    <img class="md:w-[40px] w-[30px] cursor-pointer" src="assets/img/russ.png" alt="rus">
+                    <span class="text-white font-bold cursor-pointer md:text-lg text-sm">РУС</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="shadow-lg"> 
+            <ul class="container  xl:flex grid md:grid-cols-8 grid-cols-5 items-center justify-between pt-[1px]">
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Toshkent</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Guliston</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Qarshi</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Buxoro</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Jizzax</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Samarqand</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Zarafshon</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Xiva</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Urganch</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Navoiy</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Nukus</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Termiz</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Andijon</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Farg'ona</li>
+                <li class="xl:text-lg border text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Namangan</li>
+            </ul>
+    </section>
+    <section class="container md:px-4 text-4xl grid lg:grid-cols-2 grid-rows pb-4">
+        <div class="md:border-2 md:shadow-lg flex flex-col rounded-lg md:p-4 mt-8">
+            <h1 class="sm:text-3xl text-xl pb-4 text-blue-800 font-bold text-center">Haftalik ob-havo ma'lumoti</h1>
+            <div>
+                <hr>
+                <div class="flex py-4 w-full items-center justify-between px-2">
+                    <div class="flex items-center justify-center sm:gap-4 gap-2">
+                        <span class="sm:text-xl text-sm">Bugun</span>
+                        <div class="flex items-center justify-center">
+                            <span class="sm:text-xl text-sm font-bold">1</span>
+                            <span class="sm:text-lg text-sm"> /-7</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <!-- icon -->
+                             <span class="sm:text-xl text-sm">Quyoshli</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:gap-8 gap-4">
+                        <span class="sm:text-xl text-sm"> 6%</span>
+                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="flex py-4 w-full items-center justify-between px-2">
+                    <div class="flex items-center justify-center sm:gap-4 gap-2">
+                        <span class="sm:text-xl text-sm">Bugun</span>
+                        <div class="flex items-center justify-center">
+                            <span class="sm:text-xl text-sm font-bold">1</span>
+                            <span class="sm:text-lg text-sm"> /-7</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <!-- icon -->
+                             <span class="sm:text-xl text-sm">Quyoshli</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:gap-8 gap-4">
+                        <span class="sm:text-xl text-sm"> 6%</span>
+                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="flex py-4 w-full items-center justify-between px-2">
+                    <div class="flex items-center justify-center sm:gap-4 gap-2">
+                        <span class="sm:text-xl text-sm">Bugun</span>
+                        <div class="flex items-center justify-center">
+                            <span class="sm:text-xl text-sm font-bold">1</span>
+                            <span class="sm:text-lg text-sm"> /-7</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <!-- icon -->
+                             <span class="sm:text-xl text-sm">Quyoshli</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:gap-8 gap-4">
+                        <span class="sm:text-xl text-sm"> 6%</span>
+                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="flex py-4 w-full items-center justify-between px-2">
+                    <div class="flex items-center justify-center sm:gap-4 gap-2">
+                        <span class="sm:text-xl text-sm">Bugun</span>
+                        <div class="flex items-center justify-center">
+                            <span class="sm:text-xl text-sm font-bold">1</span>
+                            <span class="sm:text-lg text-sm"> /-7</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <!-- icon -->
+                             <span class="sm:text-xl text-sm">Quyoshli</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:gap-8 gap-4">
+                        <span class="sm:text-xl text-sm"> 6%</span>
+                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="flex py-4 w-full items-center justify-between px-2">
+                    <div class="flex items-center justify-center sm:gap-4 gap-2">
+                        <span class="sm:text-xl text-sm">Bugun</span>
+                        <div class="flex items-center justify-center">
+                            <span class="sm:text-xl text-sm font-bold">1</span>
+                            <span class="sm:text-lg text-sm"> /-7</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <!-- icon -->
+                             <span class="sm:text-xl text-sm">Quyoshli</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:gap-8 gap-4">
+                        <span class="sm:text-xl text-sm"> 6%</span>
+                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="flex py-4 w-full items-center justify-between px-2">
+                    <div class="flex items-center justify-center sm:gap-4 gap-2">
+                        <span class="sm:text-xl text-sm">Bugun</span>
+                        <div class="flex items-center justify-center">
+                            <span class="sm:text-xl text-sm font-bold">1</span>
+                            <span class="sm:text-lg text-sm"> /-7</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <!-- icon -->
+                             <span class="sm:text-xl text-sm">Quyoshli</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:gap-8 gap-4">
+                        <span class="sm:text-xl text-sm"> 6%</span>
+                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="flex py-4 w-full items-center justify-between px-2">
+                    <div class="flex items-center justify-center sm:gap-4 gap-2">
+                        <span class="sm:text-xl text-sm">Bugun</span>
+                        <div class="flex items-center justify-center">
+                            <span class="sm:text-xl text-sm font-bold">1</span>
+                            <span class="sm:text-lg text-sm"> /-7</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <!-- icon -->
+                             <span class="sm:text-xl text-sm">Quyoshli</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center sm:gap-8 gap-4">
+                        <span class="sm:text-xl text-sm"> 6%</span>
+                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            
+
+        </div>
+    </section>
+   
+</body>
+<script src="script.js"></script>
+</html>

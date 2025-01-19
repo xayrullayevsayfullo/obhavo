@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ob-havo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -17,195 +18,256 @@
         .container {
             max-width: 1440px;
             width: 100%;
-            margin: 0px auto;
+            margin: 0 auto;
         }
     </style>
     <header class="bg-blue-800">
         <nav class="container flex items-center justify-between px-4">
-            <img class="w-28" src="assets/img/obhavo__logo.png" alt="obhavo__logo">
+            <img class="w-28" src="assets/img/obhavo__logo.png" alt="obhavo_logo">
             <div class="flex md:space-x-12 space-x-4 items-center justify-center">
-                <!-- <ul class="flex items-center justify-center space-x-8">
-                    <li class="text-lg font-bold text-white transition-all cursor-pointer hover:bg-white hover:text-blue-800 py-[6px] rounded-md px-4">Bugun</li>
-                    <li class="text-lg font-bold text-white transition-all cursor-pointer hover:bg-white hover:text-blue-800 py-[6px] rounded-md px-4">Soatlik</li>
-                    <li class="text-lg font-bold text-white transition-all cursor-pointer hover:bg-white hover:text-blue-800 py-[6px] rounded-md px-4">Haftalik</li>
-                </ul> -->
-            
-            
                 <div class="flex items-center justify-center gap-2">
-                    <img class="md:w-[68px] w-[48px] cursor-pointer" src="assets/img/uzb.png" alt="uzb">
+                    <img class="md:w-[68px] w-[48px] cursor-pointer" src="assets/img/uzb.png" alt="uzb" onclick="changeLanguage('uz')">
                     <span class="text-white -ml-2 font-bold cursor-pointer md:text-lg text-sm">UZB</span>
                 </div>   
                 <div class="flex items-center justify-center gap-2">
-                    <img class="md:w-[40px] w-[30px] cursor-pointer" src="assets/img/russ.png" alt="rus">
+                    <img class="md:w-[40px] w-[30px] cursor-pointer" src="assets/img/russ.png" alt="rus" onclick="changeLanguage('ru')">
                     <span class="text-white font-bold cursor-pointer md:text-lg text-sm">РУС</span>
                 </div>
             </div>
         </nav>
     </header>
+
     <section class="shadow-lg"> 
-            <ul class="container  xl:flex grid md:grid-cols-8 grid-cols-5 items-center justify-between pt-[1px]">
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Toshkent</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Guliston</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Qarshi</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Buxoro</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Jizzax</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Samarqand</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Zarafshon</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Xiva</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Urganch</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Navoiy</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Nukus</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Termiz</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Andijon</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Farg'ona</li>
-                <li class="xl:text-lg border xl:border-none text-sm flex items-center justify-center font-bold text-blue-800 hover:bg-blue-800 md:p-2 p-[2px] transition-all hover:text-white">Namangan</li>
-            </ul>
+        <ul id="city-list" class="container xl:flex grid md:grid-cols-8 grid-cols-5 items-center justify-between pt-[1px]">
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Toshkent" onclick="changeTextColor(this)">Toshkent</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Andijon" onclick="changeTextColor(this)">Andijon</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Samarqand" onclick="changeTextColor(this)">Samarqand</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Buxoro" onclick="changeTextColor(this)">Buxoro</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Farg'ona" onclick="changeTextColor(this)">Farg'ona</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Guliston" onclick="changeTextColor(this)">Guliston</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Qarshi" onclick="changeTextColor(this)">Qarshi</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Jizzax" onclick="changeTextColor(this)">Jizzax</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Zarafshon" onclick="changeTextColor(this)">Zarafshon</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Xiva" onclick="changeTextColor(this)">Xiva</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Urganch" onclick="changeTextColor(this)">Urganch</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Navoiy" onclick="changeTextColor(this)">Navoiy</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Nukus" onclick="changeTextColor(this)">Nukus</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Termiz" onclick="changeTextColor(this)">Termiz</li>
+            <li class="city xl:text-lg border xl:border-none text-sm flex items-center justify-center sm:font-bold text-blue-800 md:p-2 p-[2px] transition-all" data-city="Namangan" onclick="changeTextColor(this)">Namangan</li>
+        </ul>
     </section>
-    <section class="container md:px-4 text-4xl grid lg:grid-cols-2 grid-rows pb-4">
+
+    <section class="container md:px-4 px-2 text-4xl grid lg:grid-cols-2 grid-rows pb-4"> 
         <div class="md:border-2 md:shadow-lg flex flex-col rounded-lg md:p-4 mt-8">
-            <h1 class="sm:text-3xl text-xl pb-4 text-blue-800 font-bold text-center">Haftalik ob-havo ma'lumoti</h1>
-            <div>
-                <hr>
-                <div class="flex py-4 w-full items-center justify-between px-2">
-                    <div class="flex items-center justify-center sm:gap-4 gap-2">
-                        <span class="sm:text-xl text-sm">Bugun</span>
-                        <div class="flex items-center justify-center">
-                            <span class="sm:text-xl text-sm font-bold">1</span>
-                            <span class="sm:text-lg text-sm"> /-7</span>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- icon -->
-                             <span class="sm:text-xl text-sm">Quyoshli</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center sm:gap-8 gap-4">
-                        <span class="sm:text-xl text-sm"> 6%</span>
-                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
+            <h1 class="sm:text-3xl text-xl text-blue-800 font-bold text-center" id="forecast-title">Ob-havo prognozi</h1>
+            <div id="weather"></div>
+        </div>
+    </section>
 
-                    </div>
+    <script>
+        const apiKey = '7845bf455ef9120286a3929987884fc7';
+        let currentCity = 'Toshkent'; 
+        let currentLanguage = 'uz';
+
+        const cities = {
+            'uz': {
+                'Toshkent': 'Toshkent',
+                'Andijon': 'Andijon',
+                'Samarqand': 'Samarqand',
+                'Buxoro': 'Buxoro',
+                'Farg\'ona': 'Farg\'ona',
+                'Guliston': 'Guliston',
+                'Qarshi': 'Qarshi',
+                'Jizzax': 'Jizzax',
+                'Zarafshon': 'Zarafshon',
+                'Xiva': 'Xiva',
+                'Urganch': 'Urganch',
+                'Navoiy': 'Navoiy',
+                'Nukus': 'Nukus',
+                'Termiz': 'Termiz',
+                'Namangan': 'Namangan'
+            },
+            'ru': {
+                'Toshkent': 'Ташкент',
+                'Andijon': 'Андижан',
+                'Samarqand': 'Самарканд',
+                'Buxoro': 'Бухара',
+                'Farg\'ona': 'Фаргона',
+                'Guliston': 'Гулистон',
+                'Qarshi': 'Карши',
+                'Jizzax': 'Джизак',
+                'Zarafshon': 'Зарафшан',
+                'Xiva': 'Хива',
+                'Urganch': 'Ургенч',
+                'Navoiy': 'Навоий',
+                'Nukus': 'Нукус',
+                'Termiz': 'Термез',
+                'Namangan': 'Наманган'
+            }
+        };
+        
+        function changeLanguage(lang) {
+    currentLanguage = lang;
+    updateCityList();
+    updateForecastTitle(); 
+    fetchWeather(currentCity); 
+}
+
+function updateForecastTitle() {
+    const titleElement = document.getElementById('forecast-title');
+    if (currentLanguage === 'uz') {
+        titleElement.textContent = 'Ob-havo prognozi';
+    } else if (currentLanguage === 'ru') {
+        titleElement.textContent = 'Прогноз погоды';
+    }
+}
+function changeTextColor(element) {
+    element.classList.toggle('green-text'); 
+}
+
+
+        function updateCityList() {
+            const cityList = document.getElementById('city-list');
+            const cityItems = cityList.getElementsByClassName('city');
+            for (let i = 0; i < cityItems.length; i++) {
+                const city = cityItems[i].getAttribute('data-city');
+                cityItems[i].textContent = cities[currentLanguage][city];
+            }
+        }
+
+        async function fetchWeather(city = currentCity) {
+            const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&cnt=40&lang=${currentLanguage}&appid=${apiKey}`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                currentCity = city; 
+                displayWeather(data);
+            } catch (error) {
+                console.error('Ob-havo ma\'lumotlarini olishda xato:', error);
+            }
+        }
+
+        function displayWeather(data) {
+            const weatherDiv = document.getElementById('weather');
+            weatherDiv.innerHTML = '';
+
+            let days = {};
+            data.list.forEach((day) => {
+                const date = new Date(day.dt * 1000);
+                const dateString = date.toLocaleDateString(currentLanguage === 'uz' ? 'uz-UZ' : 'ru-RU', { weekday: 'long', day: 'numeric' }); // Oydan va yildan voz kechdik
+
+                if (!days[dateString]) {
+                    days[dateString] = day;
+                }
+            });
+
+            const dayKeys = Object.keys(days).slice(0, 6);
+            dayKeys.forEach((date) => {
+                const day = days[date];
+                const dateFormatted = new Date(day.dt * 1000).toLocaleDateString(currentLanguage === 'uz' ? 'uz-UZ' : 'ru-RU', { weekday: 'long', day: 'numeric' });
+                const temp = day.main.temp.toFixed(1); 
+                const humidity = day.main.humidity;
+                const weatherMain = day.weather[0].main.toLowerCase(); 
+
+                let iconClass = '';
+                switch (weatherMain) {
+                    case 'clear':
+                        iconClass = 'fas fa-sun text-yellow-400'; 
+                        break;
+                    case 'clouds':
+                        iconClass = 'fas fa-cloud text-gray-400';
+                        break;
+                    case 'rain':
+                        iconClass = 'fas fa-cloud-showers-heavy text-blue-600';
+                        break;
+                    case 'snow':
+                        iconClass = 'fas fa-snowflake text-blue-200'
+                        break;
+                    case 'thunderstorm':
+                        iconClass = 'fas fa-bolt text-yellow-500'
+                        break;
+                    case 'drizzle':
+                        iconClass = 'fas fa-cloud-rain text-blue-400';
+                        break;
+                    default:
+                        iconClass = 'fas fa-cloud text-gray-600'; 
+                        break;
+                }
+
+                const weatherDay = document.createElement('div');
+            weatherDay.classList.add('py-4', 'border-b', 'border-gray-200');
+                        
+            weatherDay.innerHTML = `
+            <div class="grid grid-cols-4 space-x-2">
+                <div class="flex flex-col items-start justify-center">
+                    <p class="sm:text-lg text-sm font-semibold">${dateFormatted}</p>
+                </div>    
+                <div class="flex items-center justify-center space-x-2">
+                    <i class="${iconClass} sm:text-2xl text-xl mb-2"></i> 
+                    <p class="text-sm">${translateWeather(weatherMain)}</p>
                 </div>
-                <hr>
-                <div class="flex py-4 w-full items-center justify-between px-2">
-                    <div class="flex items-center justify-center sm:gap-4 gap-2">
-                        <span class="sm:text-xl text-sm">Bugun</span>
-                        <div class="flex items-center justify-center">
-                            <span class="sm:text-xl text-sm font-bold">1</span>
-                            <span class="sm:text-lg text-sm"> /-7</span>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- icon -->
-                             <span class="sm:text-xl text-sm">Quyoshli</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center sm:gap-8 gap-4">
-                        <span class="sm:text-xl text-sm"> 6%</span>
-                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
-
-                    </div>
+                <div class="flex items-center justify-center">
+                    <p class="font-bold sm:text-lg text-sm">${temp}°C</p>
                 </div>
-                <hr>
-                <div class="flex py-4 w-full items-center justify-between px-2">
-                    <div class="flex items-center justify-center sm:gap-4 gap-2">
-                        <span class="sm:text-xl text-sm">Bugun</span>
-                        <div class="flex items-center justify-center">
-                            <span class="sm:text-xl text-sm font-bold">1</span>
-                            <span class="sm:text-lg text-sm"> /-7</span>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- icon -->
-                             <span class="sm:text-xl text-sm">Quyoshli</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center sm:gap-8 gap-4">
-                        <span class="sm:text-xl text-sm"> 6%</span>
-                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
-
-                    </div>
-                </div>
-                <hr>
-                <div class="flex py-4 w-full items-center justify-between px-2">
-                    <div class="flex items-center justify-center sm:gap-4 gap-2">
-                        <span class="sm:text-xl text-sm">Bugun</span>
-                        <div class="flex items-center justify-center">
-                            <span class="sm:text-xl text-sm font-bold">1</span>
-                            <span class="sm:text-lg text-sm"> /-7</span>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- icon -->
-                             <span class="sm:text-xl text-sm">Quyoshli</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center sm:gap-8 gap-4">
-                        <span class="sm:text-xl text-sm"> 6%</span>
-                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
-
-                    </div>
-                </div>
-                <hr>
-                <div class="flex py-4 w-full items-center justify-between px-2">
-                    <div class="flex items-center justify-center sm:gap-4 gap-2">
-                        <span class="sm:text-xl text-sm">Bugun</span>
-                        <div class="flex items-center justify-center">
-                            <span class="sm:text-xl text-sm font-bold">1</span>
-                            <span class="sm:text-lg text-sm"> /-7</span>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- icon -->
-                             <span class="sm:text-xl text-sm">Quyoshli</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center sm:gap-8 gap-4">
-                        <span class="sm:text-xl text-sm"> 6%</span>
-                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
-
-                    </div>
-                </div>
-                <hr>
-                <div class="flex py-4 w-full items-center justify-between px-2">
-                    <div class="flex items-center justify-center sm:gap-4 gap-2">
-                        <span class="sm:text-xl text-sm">Bugun</span>
-                        <div class="flex items-center justify-center">
-                            <span class="sm:text-xl text-sm font-bold">1</span>
-                            <span class="sm:text-lg text-sm"> /-7</span>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- icon -->
-                             <span class="sm:text-xl text-sm">Quyoshli</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center sm:gap-8 gap-4">
-                        <span class="sm:text-xl text-sm"> 6%</span>
-                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
-
-                    </div>
-                </div>
-                <hr>
-                <div class="flex py-4 w-full items-center justify-between px-2">
-                    <div class="flex items-center justify-center sm:gap-4 gap-2">
-                        <span class="sm:text-xl text-sm">Bugun</span>
-                        <div class="flex items-center justify-center">
-                            <span class="sm:text-xl text-sm font-bold">1</span>
-                            <span class="sm:text-lg text-sm"> /-7</span>
-                        </div>
-                        <div class="flex items-center justify-center">
-                            <!-- icon -->
-                             <span class="sm:text-xl text-sm">Quyoshli</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center sm:gap-8 gap-4">
-                        <span class="sm:text-xl text-sm"> 6%</span>
-                        <span class="sm:text-lg text-sm">NW 6 km/soat</span>
-
-                    </div>
+                <div class="flex items-center justify-end">
+                    <i class="fas fa-tint text-blue-400 text-sm mr-2"></i>
+                    <p class="text-sm">${humidity}%</p>
                 </div>
             </div>
-        </div>
-        <div>
-            
+            `;
 
-        </div>
-    </section>
-   
+            weatherDiv.appendChild(weatherDay);
+
+            });
+        }
+        function translateWeather(weatherMain) {
+    const weatherTranslations = {
+        'clear': currentLanguage === 'uz' ? 'Quyoshli' : 'Ясно',
+        'clouds': currentLanguage === 'uz' ? 'Bulutli' : 'Облачно',
+        'rain': currentLanguage === 'uz' ? 'Yomg\'ir' : 'Дождь',
+        'snow': currentLanguage === 'uz' ? 'Qor' : 'Снег',
+        'thunderstorm': currentLanguage === 'uz' ? 'Yashindi' : 'Гроза',
+        'drizzle': currentLanguage === 'uz' ? 'Yengil yomg\'ir' : 'Легкий дождь',
+        'mist': currentLanguage === 'uz' ? 'Tuman' : 'Туман',
+        'haze': currentLanguage === 'uz' ? 'Tutun' : 'Дымка',
+        'fog': currentLanguage === 'uz' ? 'Sukut' : 'Туман',
+        'dust': currentLanguage === 'uz' ? 'Chang' : 'Пыль',
+        'sand': currentLanguage === 'uz' ? 'Qum' : 'Песок'
+    };
+
+    return weatherTranslations[weatherMain] || weatherMain; 
+}
+
+function changeTextColor(element) {
+    const items = document.querySelectorAll('.city');
+    items.forEach(item => item.classList.remove('selected'));
+
+    element.classList.add('selected');
+}
+
+        document.getElementById('city-list').addEventListener('click', (event) => {
+            if (event.target.classList.contains('city')) {
+                const city = event.target.getAttribute('data-city');
+                fetchWeather(city);
+            }
+        });
+
+ 
+        fetchWeather();
+
+
+        setInterval(() => {
+            fetchWeather(currentCity);
+        }, 3600000); 
+    </script>
+    <style>
+       
+.selected {
+    background-color: rgb(1, 1, 185); 
+    color:white;
+    border:rgb(1, 1, 185);
+}
+
+    </style>
 </body>
-<script src="script.js"></script>
 </html>
